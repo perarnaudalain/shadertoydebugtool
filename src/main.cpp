@@ -113,9 +113,9 @@ vec3 computeNormal(vec3 pos)
     return normalize(nor);
 }
 
-vec4 run(vec2 fragCoord) {
+void mainImage(vec4& fragColor, vec2 fragCoord ) {
     float     ratio             = iResolution.x/iResolution.y;
-    vec3     viewportCoord     = vec3(vec2(fragCoord.x, fragCoord.y)/iResolution.y - vec2(ratio/2.0f, 0.5f), 1.f);
+    vec3     viewportCoord     = vec3(fragCoord/iResolution.y - vec2(ratio/2.0f, 0.5f), 1.f);
     vec3    eye                = vec3(0.0f, 1.25f, -20.185f);
     vec3    ray                = normalize(viewportCoord);
     vec3    p;
@@ -124,14 +124,20 @@ vec4 run(vec2 fragCoord) {
     
     if(rayMarching(eye, ray, p)) {
         vec3 normal = computeNormal(p);
-        return computeColor(ray, p, normal, lightSource);
+        fragColor = computeColor(ray, p, normal, lightSource);
     }
     else {
-        return vec4(0.5, 0, 1.0, 1.0);
+        fragColor = vec4(0.5, 0, 1.0, 1.0);
     }
 }
 
 // Your shader
+
+vec4 run(vec2 fragCoord) {
+    vec4 fragColor;
+    mainImage(fragColor, fragCoord);
+    return fragColor;
+}
 
 int main(int argc, char **argv)
 {
