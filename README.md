@@ -26,3 +26,9 @@ vec3 vector = vec3(0);
 vector.xyy => ko
 vec3(vector.x, vector.y, vector.y) => ok
 ```
+
+parameter out not allow
+```cpp
+void myfunction(out vec3 vector) => ko
+void myfunction(vec3& vector) => ok
+```
