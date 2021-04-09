@@ -2,6 +2,19 @@ Xcode debugger for https://www.shadertoy.com/
 
 Write or replace your shader between the comments in the file main.cpp
 
+##First launch
+
+Apple informs you some dylib has been downloaded from GitHub.
+
+(/image/image1.png)
+
+To continue, you need to allow dylib
+
+(/image/image2.png)
+
+##Add your own shader
+
+
 ```cpp
 // Your shader
 ...
@@ -12,14 +25,16 @@ vec4 run(vec2 fragCoord) {
 // Your shader
 ```
 
-Warning :
+##Some warnings
 Take care about the type 
-For example :
+
 ```cpp
 float variable = 0.2f;
 clamp(variable, 0.0, 0.4); => ko
 clamp(variable, 0.0f, 0.4f) => ok
 ```
+
+Some glsl accessor don't exist in gym
 
 ```cpp
 vec3 vector = vec3(0);
