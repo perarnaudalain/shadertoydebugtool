@@ -2,17 +2,17 @@ Xcode debugger for https://www.shadertoy.com/
 
 Write or replace your shader between the comments in the file main.cpp
 
-##First launch
+## First launch
 
 Apple informs you some dylib has been downloaded from GitHub.
 
-![](https://github.com/perarnaudalain/shadertoydebugtool/blob/master/image/image1.png?raw=true)
+![](https://github.com/perarnaudalain/shadertoydebugtool/blob/master/image/image1.png?raw=true width="50")
 
 To continue, you need to allow dylib
 
-![](https://github.com/perarnaudalain/shadertoydebugtool/blob/master/image/image2.png?raw=true)
+![](https://github.com/perarnaudalain/shadertoydebugtool/blob/master/image/image2.png?raw=true width="50")
 
-##Add your own shader
+## Add your own shader
 
 
 ```cpp
@@ -25,7 +25,7 @@ vec4 run(vec2 fragCoord) {
 // Your shader
 ```
 
-##Some warnings
+## Some warnings
 Take care about the type 
 
 ```cpp
