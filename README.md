@@ -2,7 +2,7 @@ Xcode debugger for https://www.shadertoy.com/
 
 Write or replace your shader between the comments in the file main.cpp
 
-[This shader](https://www.shadertoy.com/view/7s23Dm) is embedded easily in the tool
+[This shader](https://www.shadertoy.com/view/7s23Dm) has been embedded easily in the tool
 
  [![](http://img.youtube.com/vi/5C6I1v9yP5c/0.jpg)](http://www.youtube.com/watch?v=5C6I1v9yP5c "")
 
