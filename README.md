@@ -7,6 +7,7 @@ Xcode debugger for https://www.shadertoy.com/
 ## First launch
 - Open *.xcodeproj with Xcode
 - Start the solution
+- Use breakpoints
 
 ## How to use it
 
