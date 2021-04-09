@@ -6,11 +6,11 @@ Write or replace your shader between the comments in the file main.cpp
 
 Apple informs you some dylib has been downloaded from GitHub.
 
-![](https://github.com/perarnaudalain/shadertoydebugtool/blob/master/image/image1.png?raw=true width="50")
+![](https://github.com/perarnaudalain/shadertoydebugtool/blob/master/image/image1.png?raw=true)
 
 To continue, you need to allow dylib
 
-![](https://github.com/perarnaudalain/shadertoydebugtool/blob/master/image/image2.png?raw=true width="50")
+![](https://github.com/perarnaudalain/shadertoydebugtool/blob/master/image/image2.png?raw=true)
 
 ## Add your own shader
 
