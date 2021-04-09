@@ -2,12 +2,7 @@ Xcode debugger for https://www.shadertoy.com/
 
 Write or replace your shader between the comments in the file main.cpp
 
-<video controls width="250">
-    <source src="https://github.com/perarnaudalain/shadertoydebugtool/blob/master/image/movie.mp4"
-            type="video/mp4">
-
-    Sorry, your browser doesn't support embedded videos.
-</video>
+https://github.com/perarnaudalain/shadertoydebugtool/blob/master/image/movie.mp4
 
 ## First launch
 - Open *.xcodeproj with Xcode
