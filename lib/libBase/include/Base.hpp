@@ -46,7 +46,7 @@ using namespace glm;
 class Base {
     public:
         static void intialization(int _widthTexture, int _heighTexture, void(*_time)(float));
-        static int displayShader(vec4 (*f)(vec2));
+        static int displayShader(void(*f)(vec4&,vec2));
 
     private:
         static int widthTexture;
@@ -71,7 +71,7 @@ class Base {
 
         static void frameBufferResizeCallback(GLFWwindow* window, int width, int height);
 
-        static void task1(int posy, char* buffer, vec4 (*f)(vec2));
+        static void task1(int posy, char* buffer, void (*f)(vec4&,vec2));
 };
 
 #endif /* test_hpp */

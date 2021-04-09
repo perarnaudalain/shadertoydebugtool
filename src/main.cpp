@@ -133,17 +133,11 @@ void mainImage(vec4& fragColor, vec2 fragCoord ) {
 
 // Your shader
 
-vec4 run(vec2 fragCoord) {
-    vec4 fragColor;
-    mainImage(fragColor, fragCoord);
-    return fragColor;
-}
-
 int main(int argc, char **argv)
 {
     Base::intialization(widthTexture, heightTexture, [](float _iTime) {iTime = _iTime;});
     
-    int result = Base::displayShader(run);
+    int result = Base::displayShader(mainImage);
     if (result != 0) {
         return result;
     }
