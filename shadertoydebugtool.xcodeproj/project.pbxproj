@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C3EB5B6261F893500752EA9 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3EB5B5261F893500752EA9 /* libglfw.3.3.dylib */; };
+		6C15FD9026206862008E54CF /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C15FD8F26206862008E54CF /* libglfw3.a */; };
+		6C15FD95262068A2008E54CF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C15FD94262068A2008E54CF /* Cocoa.framework */; };
+		6C15FD97262068A8008E54CF /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C15FD96262068A8008E54CF /* IOKit.framework */; };
 		6C3EB5B8261F893F00752EA9 /* libBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3EB5B7261F893F00752EA9 /* libBase.a */; };
-		6C3EB5BA261F894F00752EA9 /* libglm_shared.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3EB5B9261F894F00752EA9 /* libglm_shared.dylib */; };
 		6C3EB5BD261F896E00752EA9 /* libglm_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3EB5BC261F896E00752EA9 /* libglm_static.a */; };
 		6C818B45252457BC00B3DA3A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C818B41252457BC00B3DA3A /* main.cpp */; };
 		6CB20A5A25234E78007EFAC0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB20A5925234E77007EFAC0 /* OpenGL.framework */; };
@@ -29,9 +30,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6C3EB5B5261F893500752EA9 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = "lib/glfw-3.3.2/lib/libglfw.3.3.dylib"; sourceTree = "<group>"; };
+		6C15FD8F26206862008E54CF /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = "lib/glfw-3.3.4/lib/libglfw3.a"; sourceTree = "<group>"; };
+		6C15FD94262068A2008E54CF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6C15FD96262068A8008E54CF /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		6C3EB5B7261F893F00752EA9 /* libBase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBase.a; path = lib/libBase/lib/libBase.a; sourceTree = "<group>"; };
-		6C3EB5B9261F894F00752EA9 /* libglm_shared.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglm_shared.dylib; path = lib/glm/lib/libglm_shared.dylib; sourceTree = "<group>"; };
 		6C3EB5BC261F896E00752EA9 /* libglm_static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglm_static.a; path = lib/glm/lib/libglm_static.a; sourceTree = "<group>"; };
 		6C818B41252457BC00B3DA3A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6CB20A4D25234E66007EFAC0 /* shadertoydebugtool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shadertoydebugtool; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,10 +46,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C15FD97262068A8008E54CF /* IOKit.framework in Frameworks */,
+				6C15FD95262068A2008E54CF /* Cocoa.framework in Frameworks */,
+				6C15FD9026206862008E54CF /* libglfw3.a in Frameworks */,
 				6C3EB5BD261F896E00752EA9 /* libglm_static.a in Frameworks */,
-				6C3EB5BA261F894F00752EA9 /* libglm_shared.dylib in Frameworks */,
 				6C3EB5B8261F893F00752EA9 /* libBase.a in Frameworks */,
-				6C3EB5B6261F893500752EA9 /* libglfw.3.3.dylib in Frameworks */,
 				6CC446ED2577EA63007645AD /* CoreFoundation.framework in Frameworks */,
 				6CB20A5A25234E78007EFAC0 /* OpenGL.framework in Frameworks */,
 			);
@@ -84,10 +87,11 @@
 		6CB20A5825234E77007EFAC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6C15FD96262068A8008E54CF /* IOKit.framework */,
+				6C15FD94262068A2008E54CF /* Cocoa.framework */,
+				6C15FD8F26206862008E54CF /* libglfw3.a */,
 				6C3EB5BC261F896E00752EA9 /* libglm_static.a */,
-				6C3EB5B9261F894F00752EA9 /* libglm_shared.dylib */,
 				6C3EB5B7261F893F00752EA9 /* libBase.a */,
-				6C3EB5B5261F893500752EA9 /* libglfw.3.3.dylib */,
 				6CC446EC2577EA63007645AD /* CoreFoundation.framework */,
 				6CB20A5925234E77007EFAC0 /* OpenGL.framework */,
 			);
@@ -163,7 +167,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp lib/glfw-3.3.2/lib/libglfw.3.3.dylib /usr/local/lib\ncp lib/glfw-3.3.2/lib/libglfw.3.dylib /usr/local/lib\ncp lib/glfw-3.3.2/lib/libglfw.dylib /usr/local/lib\ncp lib/glm/lib/libglm_shared.dylib /usr/local/lib\n";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -299,12 +304,12 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/lib/glfw-3.3.2/include/**",
+					"$(PROJECT_DIR)/lib/glfw-3.3.4/include/**",
 					"$(PROJECT_DIR)/lib/glm/include/**",
 					"$(PROJECT_DIR)/lib/libBase/include/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/lib/glfw-3.3.2/lib/**",
+					"$(PROJECT_DIR)/lib/glfw-3.3.4/lib/**",
 					"$(PROJECT_DIR)/lib/glm/lib/**",
 					"$(PROJECT_DIR)/lib/libBase/lib/**",
 				);
@@ -322,12 +327,12 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/lib/glfw-3.3.2/include/**",
+					"$(PROJECT_DIR)/lib/glfw-3.3.4/include/**",
 					"$(PROJECT_DIR)/lib/glm/include/**",
 					"$(PROJECT_DIR)/lib/libBase/include/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/lib/glfw-3.3.2/lib/**",
+					"$(PROJECT_DIR)/lib/glfw-3.3.4/lib/**",
 					"$(PROJECT_DIR)/lib/glm/lib/**",
 					"$(PROJECT_DIR)/lib/libBase/lib/**",
 				);

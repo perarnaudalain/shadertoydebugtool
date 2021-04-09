@@ -3,8 +3,8 @@
 
 using namespace glm;
 
-static int widthTexture = 800;
-static int heightTexture = 800;
+static int widthTexture = 200;
+static int heightTexture = 200;
 static float iTime = 0.0;
 static vec2 iResolution = vec2(widthTexture, heightTexture);
 
@@ -114,35 +114,21 @@ vec3 computeNormal(vec3 pos)
 }
 
 void mainImage(vec4& fragColor, vec2 fragCoord ) {
-    // Pixel coordinates
-    vec2 uv = vec2(fragCoord.x, fragCoord.y);
+    float     ratio             = iResolution.x/iResolution.y;
+    vec3     viewportCoord     = vec3(fragCoord/iResolution.y - vec2(ratio/2.0f, 0.5f), 1.f);
+    vec3    eye                = vec3(0.0f, 1.25f, -20.185f);
+    vec3    ray                = normalize(viewportCoord);
+    vec3    p;
     
-    // Normalized pixel coordinates (from 0 to 1)
-    vec2 uv_norm = uv / vec2(iResolution.x, iResolution.y);
+    vec3    lightSource        = vec3(-20.0, 0.0, 40.0);
     
-    vec2 center; center.x = iResolution.x / 2.; center.y = iResolution.y / 2.;
-    float radius = 200.0;
-    
-    float distance = abs(uv.x - center.x);
-    float height = abs(uv.y - center.y);
-    
-    float radius_check = sqrt(distance*distance + height*height);
-    if (radius_check < radius)
-    {
-        fragColor = vec4(uv_norm.x, uv_norm.y, 1., 1.);
+    if(rayMarching(eye, ray, p)) {
+        vec3 normal = computeNormal(p);
+        fragColor = computeColor(ray, p, normal, lightSource);
     }
-    else
-    {
-        fragColor = vec4(0., 0., 0., 1.);
+    else {
+        fragColor = vec4(0.5, 0, 1.0, 1.0);
     }
-    
-    
-
-    // Time varying pixel color
-    //vec3 col = 0.5 + 0.5*cos(iTime+uv.xyx+vec3(0,2,4));
-
-    // Output to screen
-    //fragColor = vec4(uv.x, uv.y, 0.0, 1.0);
 }
 
 // Your shader
