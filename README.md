@@ -3,8 +3,8 @@ Xcode debugger for https://www.shadertoy.com/
 Write or replace your shader between the comments in the file main.cpp
 
 ## First launch
-Open *.xcodeproj with Xcode
-Start the solution
+- Open *.xcodeproj with Xcode
+- Start the solution
 
 ## Add your own shader
 
