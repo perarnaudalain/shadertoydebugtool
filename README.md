@@ -2,12 +2,9 @@ Xcode debugger for https://www.shadertoy.com/
 
 Write or replace your shader between the comments in the file main.cpp
 
-<video controls width="250">
-    <source src="https://github.com/perarnaudalain/shadertoydebugtool/blob/master/image/movie.mp4"
-            type="video/mp4">
+[This shader](https://www.shadertoy.com/view/7s23Dm) is embedded easily in the tool
 
-    Sorry, your browser doesn't support embedded videos.
-</video>
+ [![](http://img.youtube.com/vi/5C6I1v9yP5c/0.jpg)](http://www.youtube.com/watch?v=5C6I1v9yP5c "")
 
 ## First launch
 - Open *.xcodeproj with Xcode
@@ -19,7 +16,7 @@ Write or replace your shader between the comments in the file main.cpp
 ```cpp
 // Your shader
 ...
-vec4 run(vec2 fragCoord) {
+void mainImage(vec4& fragColor, vec2 fragCoord) {
 ...
 }
 ...
