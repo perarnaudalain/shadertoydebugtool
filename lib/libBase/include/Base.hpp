@@ -45,7 +45,7 @@ using namespace glm;
 
 class Base {
     public:
-        static void intialization(int _widthTexture, int _heighTexture, void(*_time)(float));
+        static void intialization(int _widthTexture, int _heighTexture, void(*_time)(float), int multThreadNbr = 1);
         static int displayShader(void(*f)(vec4&,vec2));
 
     private:
