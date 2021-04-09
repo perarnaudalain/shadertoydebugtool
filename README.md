@@ -2,7 +2,7 @@ Xcode debugger for https://www.shadertoy.com/
 
 Write or replace your shader between the comments in the file main.cpp
 
-https://github.com/perarnaudalain/shadertoydebugtool/blob/master/image/movie.mp4
+[![](http://img.youtube.com/vi/5C6I1v9yP5c/0.jpg)](http://www.youtube.com/watch?v=5C6I1v9yP5c "")
 
 ## First launch
 - Open *.xcodeproj with Xcode
